@@ -1,0 +1,11 @@
+diff -dur fltk-1.3.1000.orig/wscript fltk-1.3.1000/wscript
+--- fltk-1.3.1000.orig/wscript	2017-10-05 03:55:47.000000000 +0200
++++ fltk-1.3.1000/wscript	2019-03-20 13:06:28.000000000 +0100
+@@ -432,6 +432,7 @@
+ src/Fl_PNM_Image.cxx
+ ''',
+                     target = 'ntk_images',
++                    use = ['ntk_shared'],
+                     uselib = [ 'LIBJPEG', 'LIBPNG', 'LIBZ', 'DL', 'M', 'PTHREAD' ] )
+ 
+     if bld.env.USE_GL:
