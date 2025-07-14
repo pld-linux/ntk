@@ -50,7 +50,7 @@ Statyczna biblioteka %{name}.
 %prep
 %setup -q -n fltk-%{version}
 
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 CC="%{__cc}" \
